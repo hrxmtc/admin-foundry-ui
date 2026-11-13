@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse screenshot --viewport '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/screenshots/ticket-context.png'",
+  "observed": "Screenshot saved (viewport): /Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/screenshots/ticket-context.png\n",
+  "hypothesis": "工单草稿仍在，刷新应恢复同一工单、对外草稿、内部草稿及所选发送状态。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse reload"
+}

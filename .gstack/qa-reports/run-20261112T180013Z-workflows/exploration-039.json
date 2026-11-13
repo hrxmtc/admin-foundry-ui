@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\".profile-button\").click();document.querySelector(\"[data-action=switch-role]\").click();return [...document.querySelectorAll(\"#dialog .login-role\")].map(x=>({id:x.dataset.id,text:x.innerText}))})())'",
+  "observed": "[{\"id\":\"ST01\",\"text\":\"予安\\n周予安\\n负责人\"},{\"id\":\"ST02\",\"text\":\"陈亦\\n陈亦\\n客服 / 运营\"},{\"id\":\"ST03\",\"text\":\"顾霖\\n顾霖\\n财务\"},{\"id\":\"ST04\",\"text\":\"林澈\\n林澈\\n内容管理\"}]\n",
+  "hypothesis": "身份目录已确认，选择财务检查队列与工单摘要不会暴露作品或审核权限。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse click '[data-action=\"choose-role\"][data-id=\"ST03\"]'"
+}

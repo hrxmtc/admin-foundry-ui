@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{const before={draft:document.querySelector(\"#reply-text\").value,status:document.querySelector(\"#reply-status\").value};document.querySelector(\"[data-action=back]\").click();return {before,queue:document.querySelector(\".queue-footer\").innerText}})())'",
+  "observed": "{\"before\":{\"draft\":\"对外草稿：已收到费用异议，正在核对原始消费。\",\"status\":\"待作者补充\"},\"queue\":\"显示 1–1 / 1 项 · 仅我负责\\n收起队列\"}\n",
+  "hypothesis": "最终刷新与返回保护正常，复查空白拒绝、内部保存、对外发送和作者隔离。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse eval /tmp/moyu-qa-ticket-reply.js"
+}

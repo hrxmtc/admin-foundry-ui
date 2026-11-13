@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify({focused:document.activeElement.tagName,selected:document.querySelector(\"[data-action=detail-tab][aria-selected=true]\").dataset.value})'",
+  "observed": "{\"focused\":\"BODY\",\"selected\":\"internal\"}\n",
+  "hypothesis": "键盘焦点问题精确复现两次，先运行新的最小浏览器回归证明失败，再修复共享页签焦点与tab顺序。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- python3 tests/ticket-tabs.regression-1.test.py"
+}

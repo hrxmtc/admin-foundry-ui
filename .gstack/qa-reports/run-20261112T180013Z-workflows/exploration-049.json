@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{return {focused:document.activeElement.tagName,action:document.activeElement.dataset.action,selected:document.querySelector(\"[data-action=detail-tab][aria-selected=true]\").dataset.value}})())'",
+  "observed": "{\"focused\":\"BODY\",\"selected\":\"internal\"}\n",
+  "hypothesis": "再次确认焦点为BODY，按左方向键应能回到公开页签但预计无法生效。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press ArrowLeft"
+}

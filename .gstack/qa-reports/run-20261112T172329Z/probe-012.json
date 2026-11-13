@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "chain"
+  ],
+  "stdout": "[text] --- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:4179/index.html) ---\n墨鱼管理后台ADMIN内部运营空间工作空间工作台会员管理作品管理交易与财务订单管理退款处理费用账单账务记录对账核查官方 AI商品与活动老墨社区3用户工单6设置与审计予安周予安负责人 · 演示身份运营空间交易与财务MO261113003搜索业务对象⌘ K演示环境返回原列表订单详情MO261113003陈默2026-11-13 13:35 UTC+8作者结果对照查询原付款付款待核对本次尚未取得可靠付款结果。继续查询原付款，不能凭截图发放，也不新建订单猜测结果。购买快照测试数据 · 非正式售价订单实付¥49.00CNY · 原订单金额成功付款合计¥0.000 笔成功付款发放次数0一个订单只履约一次商品工具会员 · 月度价格版本TOOL-DEMO-01权益 / 额度月度工具权益；具体起止以发放记录为准优惠快照无优惠历史规则后续改价、下架或活动变更不重算本单付款待核对履约未开始退款无退款付款尝试与渠道证据每笔真实收款分别定位付款标识金额渠道结果业务归属证据PAY003演示渠道 A¥49.00未知待核对原付款查看最后核对：2026-11-13 16:40 UTC+8重新查询履约与权益未开始当前情况未开始操作前提可靠付款证据、原商品规则与尚未完成的履约可执行范围仅当前订单未完成部分作者所见正在确认付款处理时间线订单创建，保存购买快照2026-11-13 13:35 UTC+8 · 本人确认商品与实付查询原付款未取得新结果保留原付款与业务状态周予安 · 2026-11-13 01:26 UTC+8会员与关联陈默陈默U1003会员详情会员账户费用账单c***@example.com仅显示当前职责所需的脱敏信息。关联支持TK6003 · 待作者补充墨鱼 · 运营空间　/　所有数据及操作均为本地演示UTC+08:00 · 截至 16:40\n未取得新的付款结果本次演示渠道查询超时，未取得新证据。保留原状态与上次核对时间。原订单MO261113003原付款PAY003当前付款待核对恢复路径关闭后继续查询同一笔原付款，不重新购买或凭截图发放取消\n--- END UNTRUSTED EXTERNAL CONTENT ---\n\n[attrs] --- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:4179/index.html) ---\n{\n  \"id\": \"dialog\",\n  \"class\": \"app-dialog\",\n  \"aria-labelledby\": \"dialog-title\",\n  \"open\": \"\"\n}\n--- END UNTRUSTED EXTERNAL CONTENT ---\n\n[console] --- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:4179/index.html) ---\n(no console errors)\n--- END UNTRUSTED EXTERNAL CONTENT ---\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T17:24:43.485Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T17:26:57.145Z\",\"remainingMs\":766340,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T17:26:57.179Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exitCode": 0,
+  "elapsedSeconds": 0.054
+}

@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse screenshot --viewport .gstack/qa-reports/run-20261112T180013Z-workflows/screenshots/final-ticket-1024.png",
+  "stdin": null,
+  "stdout": "Screenshot saved (viewport): .gstack/qa-reports/run-20261112T180013Z-workflows/screenshots/final-ticket-1024.png\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:14:10.124Z\",\"remainingMs\":123986,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:14:10.190Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

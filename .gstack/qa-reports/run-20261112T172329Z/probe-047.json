@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "js",
+    "JSON.stringify((()=>{MOYU.closeModal();MOYU.navigate(\"usage\",\"AI3004\");return {text:document.querySelector(\"main\").innerText,action:MOYU.find(\"actions\",\"AI3004\")};})())"
+  ],
+  "stdout": "{\"text\":\"返回原列表\\n动作费用详情\\n第 8 章 · 情节分析\\nAI3004\\n自备 Key\\n2026-11-13 11:06 UTC+8\\n作者结果对照\\n说明费用来源\\n这是作者自备服务配置的成本估算，费用由其服务商收取，不消耗墨鱼官方额度。不展示配置密钥或提示词。\\n服务商成本估算\\n仅服务商估算\\n墨鱼官方消费\\n¥0.00\\n自备 Key 不扣官方额度\\n服务商估算\\n¥0.84\\n仅供参考，不是墨鱼账单\\n估算性质\\n非正式账单\\n不能据此创建官方扣款\\n来源锁定\\n自备 Key，当前动作及全部子调用使用同一来源\\n服务 / 模型\\n作者配置 · 文本模型\\n价格版本\\n作者配置的估算口径\\n作品关联\\n第七封信\\n执行结果\\n已完成\\n保留结果\\n已有结果保留，可由作者继续使用\\n相关预占\\n¥0.00，不是已消费\\n平台已知成本\\n不适用，服务商直接向作者收取\\n平台承担差额\\n不适用\\n作者收费边界\\n消费不超过已授权上限；技术失败无可用结果不收费\\n子调用与计量证据\\n不含私人输入\\n子步骤\\t执行 / 计量\\t官方消费\\t依据\\n情节分析\\t成功\\t不适用\\t查看\\n处理与沟通\\n\\n尚无新增处理记录。后续操作会在此处保留依据与结果。\\n\\n费用更正与善意补偿分开；需要现金退款时返回原购买订单的售后流程。\\n\\n另行申请善意补偿\\n会员与关联\\n江序\\n江序\\nU1006\\n会员详情\\n会员账户\\n费用账单\\n\\nj***@example.com\\n仅显示当前职责所需的脱敏信息。\\n\\n关联支持\\nTK6004 · 待受理\\n墨鱼 · 运营空间　/　所有数据及操作均为本地演示\\nUTC+08:00 · 截至 16:40\",\"action\":{\"id\":\"AI3004\",\"user\":\"U1006\",\"project\":\"P2006\",\"title\":\"第 8 章 · 情节分析\",\"source\":\"自备 Key\",\"model\":\"作者配置 · 文本模型\",\"state\":\"已完成\",\"settlement\":\"仅服务商估算\",\"auth\":0,\"charge\":0,\"estimate\":0.84,\"cost\":null,\"hold\":0,\"account\":null,\"date\":\"2026-11-13 11:06\",\"result\":true,\"parts\":[[\"情节分析\",\"成功\",null]]}}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T17:24:43.485Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T17:38:35.524Z\",\"remainingMs\":67961,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T17:38:35.558Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exitCode": 0,
+  "elapsedSeconds": 0.051
+}

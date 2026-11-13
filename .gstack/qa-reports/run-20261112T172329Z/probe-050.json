@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "js",
+    "JSON.stringify((()=>{const out={usageAfter:MOYU.find(\"actions\",\"AI3002\"),refundAfter:MOYU.find(\"refunds\",\"RF4001\")};MOYU.navigate(\"tickets\",\"TK6005\");MOYU.commands[\"author-preview\"]({kind:\"tickets\",id:\"TK6005\"});document.querySelector(\"#author-feedback\").value=\"还未解决，请继续核对原记录\";document.querySelector(\"[data-action=author-ticket-feedback]\").click();out.ticketAfter=MOYU.find(\"tickets\",\"TK6005\");return out;})())"
+  ],
+  "stdout": "{\"usageAfter\":{\"id\":\"AI3002\",\"user\":\"U1003\",\"project\":\"P2003\",\"title\":\"第 6 章 · 生成与设定整理\",\"source\":\"官方 AI\",\"model\":\"文本服务 A · 演示\",\"state\":\"部分完成\",\"settlement\":\"待核对\",\"auth\":2,\"charge\":0.64,\"expected\":0.64,\"cost\":null,\"hold\":1.2,\"account\":\"AC005\",\"date\":\"2026-11-13 13:40\",\"result\":true,\"parts\":[[\"生成草稿\",\"成功\",0.64],[\"设定整理\",\"用量未知\",null]],\"checkedAt\":\"2026-11-13 01:39\",\"_rev\":1},\"refundAfter\":{\"id\":\"RF4001\",\"user\":\"U1004\",\"order\":\"MO261113004\",\"payment\":\"PAY004-B\",\"amount\":200,\"reason\":\"同一订单的额外成功付款，全额原路退回\",\"status\":\"结果待核对\",\"cash\":\"结果未知\",\"rights\":\"无需冲正\",\"reserve\":0,\"source\":null,\"rule\":\"多收款逐笔原路全退 · 演示\",\"date\":\"2026-11-13 12:10\",\"submitted\":true,\"channelUnknown\":true,\"checkedAt\":\"2026-11-13 01:39\",\"_rev\":1},\"ticketAfter\":{\"id\":\"TK6005\",\"user\":\"U1005\",\"title\":\"希望复核帖子互动限制\",\"category\":\"社区复核\",\"status\":\"处理中\",\"owner\":\"林澈\",\"order\":null,\"project\":null,\"action\":null,\"review\":\"RV5006\",\"updated\":\"2026-11-13 01:39\",\"grant\":null,\"messages\":[{\"who\":\"author\",\"name\":\"许知远\",\"time\":\"10:10\",\"text\":\"想了解本次社区处置的具体依据，并申请复核。\"},{\"who\":\"staff\",\"name\":\"林澈\",\"time\":\"10:40\",\"text\":\"已将你的意见关联到原处置记录进行复核。当前限制仅影响社区互动，私人写作、保存、导出及账务查询保持可用。\"},{\"who\":\"author\",\"name\":\"许知远\",\"time\":\"01:39\",\"text\":\"还未解决，请继续核对原记录\"}],\"_rev\":1}}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T17:24:43.485Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T17:39:16.153Z\",\"remainingMs\":27332,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T17:39:16.191Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exitCode": 0,
+  "elapsedSeconds": 0.059
+}

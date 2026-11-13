@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press ArrowLeft",
+  "observed": "Pressed ArrowLeft\n",
+  "hypothesis": "左方向键已执行，记录仍选中的内部页签与缺失焦点作为缺陷证据。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify({focused:document.activeElement.tagName,selected:document.querySelector(\"[data-action=detail-tab][aria-selected=true]\").dataset.value})'"
+}

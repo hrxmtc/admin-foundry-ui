@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-13",
+  "url": "http://127.0.0.1:49865/index.html",
+  "healthScore": null,
+  "scope": "工作台与工单局部浏览器检查，未进行全站评分",
+  "issues": [
+    {
+      "id": "WORKFLOW-001",
+      "title": "详情页签激活后丢失键盘焦点",
+      "severity": "medium",
+      "category": "accessibility",
+      "status": "fixed-and-browser-verified"
+    }
+  ],
+  "categoryScores": {},
+  "regressionTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "formalEvidenceVerdict": "inconclusive: no evidence rows"
+}

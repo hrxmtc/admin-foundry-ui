@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "goto",
+    "http://127.0.0.1:4179/index.html"
+  ],
+  "stdout": "Navigated to http://127.0.0.1:4179/index.html (200)\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T17:24:43.485Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T17:24:48.269Z\",\"remainingMs\":895216,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T17:24:48.441Z\",\"deadlineAt\":\"2026-11-12T17:39:43.485Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exitCode": 0,
+  "elapsedSeconds": 0.191
+}

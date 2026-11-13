@@ -1,8 +1,5 @@
 .DS_Store
-.file-versions/
-.gstack/
 .od-skills/
-.od-frames/
 .codex/
 .mcp.json
 .env
@@ -13,7 +10,3 @@ __pycache__/
 *.py[cod]
 *.log
 *.tmp
-
-# Private design references stay local.
-/DESIGN.md
-/docs/designs/

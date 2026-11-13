@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{MOYU.state=JSON.parse(JSON.stringify(window.MOYU_SEED));MOYU.save();MOYU.filters={overview:{expanded:true}};MOYU.drafts={};MOYU.history=[];MOYU.commands[\"choose-role\"]({id:\"ST01\"});return {origin:location.origin,heading:document.querySelector(\"#page-title\").innerText,rows:document.querySelectorAll(\".work-task\").length}})())'",
+  "observed": "{\"origin\":\"http://127.0.0.1:49865\",\"heading\":\"运营工作台\",\"rows\":12}\n",
+  "hypothesis": "自有演示数据已恢复初态，最终源码上重跑完整队列、分页与筛选契约。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse eval /tmp/moyu-qa-workbench.js"
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-13",
+  "url": "http://127.0.0.1:4179/index.html",
+  "healthScore": 100,
+  "provisional": true,
+  "scope": "五条核心流程的已执行功能检查与控制台；非全站验收",
+  "issues": [],
+  "resolvedIssues": [
+    {
+      "id": "ISSUE-001",
+      "title": "内部备注与对外回复共用草稿",
+      "severity": "critical",
+      "category": "functional",
+      "status": "verified-fixed"
+    },
+    {
+      "id": "ISSUE-002",
+      "title": "刷新丢失工作现场、筛选与未发送输入",
+      "severity": "critical",
+      "category": "functional",
+      "status": "verified-fixed"
+    },
+    {
+      "id": "ISSUE-003",
+      "title": "演示身份与退出状态刷新重置",
+      "severity": "medium",
+      "category": "functional",
+      "status": "verified-fixed"
+    }
+  ],
+  "categoryScores": {
+    "console": 100,
+    "functional": 100
+  },
+  "before": {
+    "healthScore": 67,
+    "categoryScores": {
+      "console": 100,
+      "functional": 42
+    }
+  },
+  "untestedCategories": [
+    "links",
+    "visual",
+    "ux",
+    "performance",
+    "content",
+    "accessibility"
+  ],
+  "explorationBudgetSeconds": 900,
+  "recordedProbeCommandSeconds": 41.361,
+  "probeRecordCount": 51,
+  "screenshotCount": 6,
+  "regression": {
+    "tests": 5,
+    "passed": 5,
+    "log": "regression-final-green.txt"
+  }
+}

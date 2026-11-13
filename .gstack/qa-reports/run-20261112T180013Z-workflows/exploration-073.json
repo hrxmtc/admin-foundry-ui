@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse console --errors",
+  "observed": "--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:49865/index.html) ---\n(no console errors)\n--- END UNTRUSTED EXTERNAL CONTENT ---\n",
+  "hypothesis": "最终控制台无错误；补查 1024px 桌面宽度下的工单布局。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse viewport 1024x768"
+}

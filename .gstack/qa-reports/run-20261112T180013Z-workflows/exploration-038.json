@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press Escape",
+  "observed": "Pressed Escape\n",
+  "hypothesis": "通过员工菜单打开职责选择，读取实际可用演示身份。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\".profile-button\").click();document.querySelector(\"[data-action=switch-role]\").click();return [...document.querySelectorAll(\"#dialog .login-role\")].map(x=>({id:x.dataset.id,text:x.innerText}))})())'"
+}

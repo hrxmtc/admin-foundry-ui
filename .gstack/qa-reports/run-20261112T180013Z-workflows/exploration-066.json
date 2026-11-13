@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse reload",
+  "observed": "Reloaded http://127.0.0.1:49865/index.html\n",
+  "hypothesis": "刷新后读取筛选并从唯一待办进入TK6002，为最终工单上下文复查准备。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{const queue={type:document.querySelector(\"[role=tab][aria-selected=true]\").innerText,mine:document.querySelector(\"[data-action=queue-mine]\").getAttribute(\"aria-pressed\"),sort:document.querySelector(\"[data-action=queue-sort]\").textContent};document.querySelector(\"[data-go=tickets][data-id=TK6002]\").click();return {queue,ticket:document.querySelector(\".ticket-context\").innerText}})())'"
+}

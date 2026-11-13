@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "fileName": "index.html",
+  "currentVersionId": "6b64f224-da9a-40b7-9522-32cac9e5fddc",
+  "entries": [
+    {
+      "id": "c70262d1-427a-422d-ba55-f3dafcc69881",
+      "fileName": "index.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1794502256505,
+      "source": "ai",
+      "prompt": "按照PRD来设计这个管理后台",
+      "size": 5820,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-c70262d1-427a-422d-ba55-f3dafcc69881.html",
+      "promptSource": "message",
+      "contentDigest": "134197b06c11fc99ba0475d76bf2f4fe5b931340a57640a59146edb0144a2fdf"
+    },
+    {
+      "id": "6b64f224-da9a-40b7-9522-32cac9e5fddc",
+      "fileName": "index.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1794506312379,
+      "source": "ai",
+      "prompt": "按照你的建议来修复",
+      "size": 5874,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-6b64f224-da9a-40b7-9522-32cac9e5fddc.html",
+      "contentDigest": "683cb67d9b0f0dc125c163a9e9b81c0fdc58c803ef919d9a9a3c7c02412504eb",
+      "promptSource": "message"
+    }
+  ]
+}

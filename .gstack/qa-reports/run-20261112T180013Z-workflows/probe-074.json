@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify({viewport:innerWidth,document:document.documentElement.scrollWidth,body:document.body.scrollWidth,overflow:[...document.querySelectorAll(\"main, .detail-grid, .ticket-reply, textarea, .detail-tabs\")].map(e=>({tag:e.tagName,cls:e.className,left:Math.round(e.getBoundingClientRect().left),right:Math.round(e.getBoundingClientRect().right)}))})'",
+  "stdin": null,
+  "stdout": "{\"viewport\":1024,\"document\":1024,\"body\":1024,\"overflow\":[{\"tag\":\"MAIN\",\"cls\":\"content\",\"left\":200,\"right\":1024},{\"tag\":\"DIV\",\"cls\":\"detail-grid ticket-layout\",\"left\":224,\"right\":1000},{\"tag\":\"DIV\",\"cls\":\"tabs detail-tabs\",\"left\":224,\"right\":732},{\"tag\":\"TEXTAREA\",\"cls\":\"\",\"left\":249,\"right\":707}]}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:14:02.647Z\",\"remainingMs\":131463,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:14:02.681Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

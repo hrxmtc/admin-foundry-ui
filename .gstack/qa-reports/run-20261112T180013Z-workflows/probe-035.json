@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-action=view-material]\").click();return {title:document.querySelector(\"#dialog-title\").textContent,privateFragmentPresent:!!document.querySelector(\"#dialog .post-prose\"),reason:document.querySelector(\"#dialog\").innerText}})())'",
+  "stdin": null,
+  "stdout": "{\"title\":\"当前无法读取此材料\",\"privateFragmentPresent\":false,\"reason\":\"当前无法读取此材料\\n授权状态\\n已撤销\\n指定版本\\n第 6 章 · 快照 v3\\n范围\\n第 2 段 · 指定快照片段\\n有效至\\n2026-11-14 14:10 UTC+8\\n当前职责\\n负责人\\n授权已撤销或失效，后续访问已阻止。可继续依据元数据排查，确需新材料时重新向作者请求。\\n取消\"}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:06:02.885Z\",\"remainingMs\":611225,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:06:02.915Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

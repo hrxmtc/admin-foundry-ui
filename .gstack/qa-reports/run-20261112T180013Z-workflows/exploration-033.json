@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press Escape",
+  "observed": "Pressed Escape\n",
+  "hypothesis": "材料弹窗已关闭，打开作者对照读取实际撤销授权入口。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-action=author-preview]\").click();return {text:document.querySelector(\"#dialog\").innerText,buttons:[...document.querySelectorAll(\"#dialog button\")].map(x=>({text:x.textContent,action:x.dataset.action,id:x.dataset.id}))}})())'"
+}

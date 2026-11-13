@@ -1,0 +1,67 @@
+
+QA_DEADLINE {"guard":"qa-deadline","event":"started","version":1,"startedAt":"2026-11-12T17:24:43.485Z","deadlineAt":"2026-11-12T17:39:43.485Z","budgetMs":900000,"observedAt":"2026-11-12T17:34:01.590Z","remainingMs":341895,"expired":false}
+test_01_public_and_internal_drafts_are_independent (__main__.RecoveryRegression.test_01_public_and_internal_drafts_are_independent) ... FAIL
+test_02_reload_restores_object_filter_and_unsent_reply (__main__.RecoveryRegression.test_02_reload_restores_object_filter_and_unsent_reply) ... FAIL
+test_03_internal_send_does_not_clear_or_expose_public_draft (__main__.RecoveryRegression.test_03_internal_send_does_not_clear_or_expose_public_draft) ... FAIL
+test_04_role_drafts_and_logged_out_session_survive_reload (__main__.RecoveryRegression.test_04_role_drafts_and_logged_out_session_survive_reload) ... FAIL
+
+======================================================================
+FAIL: test_01_public_and_internal_drafts_are_independent (__main__.RecoveryRegression.test_01_public_and_internal_drafts_are_independent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/tests/recovery.regression-1.test.py", line 62, in test_01_public_and_internal_drafts_are_independent
+    self.assertEqual(actual, "对外：已查明权益，请确认到账", "内部草稿不能自动进入作者可见输入区")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '内部：调查依据，只供员工交接' != '对外：已查明权益，请确认到账'
+- 内部：调查依据，只供员工交接
++ 对外：已查明权益，请确认到账
+ : 内部草稿不能自动进入作者可见输入区
+
+======================================================================
+FAIL: test_02_reload_restores_object_filter_and_unsent_reply (__main__.RecoveryRegression.test_02_reload_restores_object_filter_and_unsent_reply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/tests/recovery.regression-1.test.py", line 74, in test_02_reload_restores_object_filter_and_unsent_reply
+    self.assertEqual(actual, {"page":"tickets","id":"TK6001","q":"续费","text":"刷新后仍应保留的对外答复","status":"待作者补充"})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'page': 'overview', 'id': None} != {'page': 'tickets', 'id': 'TK6001', 'q': '续费', 'tex[33 chars]者补充'}
+- {'id': None, 'page': 'overview'}
++ {'id': 'TK6001',
++  'page': 'tickets',
++  'q': '续费',
++  'status': '待作者补充',
++  'text': '刷新后仍应保留的对外答复'}
+
+======================================================================
+FAIL: test_03_internal_send_does_not_clear_or_expose_public_draft (__main__.RecoveryRegression.test_03_internal_send_does_not_clear_or_expose_public_draft)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/tests/recovery.regression-1.test.py", line 90, in test_03_internal_send_does_not_clear_or_expose_public_draft
+    self.assertEqual(actual, {"draft":"对外：继续保留的未发送说明","internal":["internal"]})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'draft': '', 'internal': ['internal']} != {'draft': '对外：继续保留的未发送说明', 'internal': ['internal']}
+- {'draft': '', 'internal': ['internal']}
++ {'draft': '对外：继续保留的未发送说明', 'internal': ['internal']}
+?            +++++++++++++
+
+
+======================================================================
+FAIL: test_04_role_drafts_and_logged_out_session_survive_reload (__main__.RecoveryRegression.test_04_role_drafts_and_logged_out_session_survive_reload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/tests/recovery.regression-1.test.py", line 96, in test_04_role_drafts_and_logged_out_session_survive_reload
+    self.assertEqual(self.js("MOYU.actor"), "ST02", "刷新不能自动切回负责人")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ST01' != 'ST02'
+- ST01
+?    ^
++ ST02
+?    ^
+ : 刷新不能自动切回负责人
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.066s
+
+FAILED (failures=4)
+
+QA_DEADLINE {"guard":"qa-deadline","event":"finished","observedAt":"2026-11-12T17:34:02.753Z","deadlineAt":"2026-11-12T17:39:43.485Z","timedOut":false,"exitCode":1}

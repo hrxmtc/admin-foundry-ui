@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-nav=tickets]\").click();const ids=[...document.querySelectorAll(\"[data-go=tickets][data-id]\")].map(x=>x.dataset.id);document.querySelector(\"[data-go=tickets][data-id=TK6005]\").click();return {ids,context:document.querySelector(\".ticket-context\").innerText,reviewSummary:!!document.querySelector(\".business-summary [data-go=reviews]\"),financeSummary:!!document.querySelector(\".business-summary [data-go=orders],.business-summary [data-go=usage]\"),draft:document.querySelector(\"#reply-text\").value}})())'",
+  "stdin": null,
+  "stdout": "{\"ids\":[\"TK6005\",\"TK6005\"],\"context\":\"TK6005\\n已答复待确认\\n作者 许知远\\n负责人 林澈\\n分派 / 交接\\n更新状态\",\"reviewSummary\":true,\"financeSummary\":false,\"draft\":\"\"}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:06:55.977Z\",\"remainingMs\":558133,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:06:56.009Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse click '[data-action=\"author-revoke\"]'",
+  "observed": "Clicked [data-action=\"author-revoke\"] → now at http://127.0.0.1:49865/index.html\n",
+  "hypothesis": "撤销后重新打开同一材料，检查不能再读取指定片段。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-action=view-material]\").click();return {title:document.querySelector(\"#dialog-title\").textContent,privateFragmentPresent:!!document.querySelector(\"#dialog .post-prose\"),reason:document.querySelector(\"#dialog\").innerText}})())'"
+}

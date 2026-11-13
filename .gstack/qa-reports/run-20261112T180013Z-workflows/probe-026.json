@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-nav=tickets]\").click();document.querySelector(\"[data-go=tickets][data-id=TK6004]\").click();return {context:document.querySelector(\".ticket-context\").innerText,claim:!!document.querySelector(\"[data-action=claim-ticket]\"),privateTextPresent:document.querySelector(\".ticket-layout\").innerText.includes(\"【授权演示片段】\")}})())'",
+  "stdin": null,
+  "stdout": "{\"context\":\"TK6004\\n待受理\\n作者 江序\\n负责人 未分派\\n受理工单\\n分派 / 交接\\n更新状态\",\"claim\":true,\"privateTextPresent\":false}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:05:15.814Z\",\"remainingMs\":658296,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:05:15.849Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

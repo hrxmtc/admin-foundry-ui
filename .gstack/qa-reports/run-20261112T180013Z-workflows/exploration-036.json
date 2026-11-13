@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-action=view-material]\").click();return {title:document.querySelector(\"#dialog-title\").textContent,privateFragmentPresent:!!document.querySelector(\"#dialog .post-prose\"),reason:document.querySelector(\"#dialog\").innerText}})())'",
+  "observed": "{\"title\":\"当前无法读取此材料\",\"privateFragmentPresent\":false,\"reason\":\"当前无法读取此材料\\n授权状态\\n已撤销\\n指定版本\\n第 6 章 · 快照 v3\\n范围\\n第 2 段 · 指定快照片段\\n有效至\\n2026-11-14 14:10 UTC+8\\n当前职责\\n负责人\\n授权已撤销或失效，后续访问已阻止。可继续依据元数据排查，确需新材料时重新向作者请求。\\n取消\"}\n",
+  "hypothesis": "撤销后已阻断私人片段，记录浏览器控制台以确认上述操作没有引发运行错误。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse console --errors"
+}

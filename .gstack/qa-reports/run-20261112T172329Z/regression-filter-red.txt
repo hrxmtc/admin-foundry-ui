@@ -1,0 +1,14 @@
+
+QA_DEADLINE {"guard":"qa-deadline","event":"started","version":1,"startedAt":"2026-11-12T17:24:43.485Z","deadlineAt":"2026-11-12T17:39:43.485Z","budgetMs":900000,"observedAt":"2026-11-12T17:38:03.440Z","remainingMs":100045,"expired":false}
+test_01_public_and_internal_drafts_are_independent (__main__.RecoveryRegression.test_01_public_and_internal_drafts_are_independent) ... ok
+test_02_reload_restores_object_filter_and_unsent_reply (__main__.RecoveryRegression.test_02_reload_restores_object_filter_and_unsent_reply) ... ok
+test_03_internal_send_does_not_clear_or_expose_public_draft (__main__.RecoveryRegression.test_03_internal_send_does_not_clear_or_expose_public_draft) ... ok
+test_04_search_filter_survives_reload_without_other_action (__main__.RecoveryRegression.test_04_search_filter_survives_reload_without_other_action) ... ok
+test_05_role_drafts_and_logged_out_session_survive_reload (__main__.RecoveryRegression.test_05_role_drafts_and_logged_out_session_survive_reload) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.432s
+
+OK
+
+QA_DEADLINE {"guard":"qa-deadline","event":"finished","observedAt":"2026-11-12T17:38:04.966Z","deadlineAt":"2026-11-12T17:39:43.485Z","timedOut":false,"exitCode":0}

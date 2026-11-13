@@ -1,0 +1,23 @@
+[browse] [proxy] none: system proxy settings (Chromium's default on darwin; BROWSE_PROXY_URL=direct connects directly)
+[browse] Server running on http://127.0.0.1:18192 (PID: 40988)
+[browse] State file: /Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/browse.json
+[browse] Idle timeout: 1800s
+[browse] Parent process 40977 exited (server stays alive, idle timeout will clean up)
+[browse] terminal-agent respawned by watchdog (PID: 41261)
+[browse] Tab closed (id=3, remaining=2)
+[browse] Tab closed (id=4, remaining=2)
+[browse] Tab closed (id=5, remaining=2)
+[browse] Tab closed (id=6, remaining=2)
+[browse] Tab closed (id=7, remaining=2)
+[browse] Tab closed (id=8, remaining=2)
+[browse] Tab closed (id=2, remaining=2)
+[browse] Tab closed (id=1, remaining=1)
+[browse] Tab closed (id=11, remaining=2)
+[browse] Tab closed (id=12, remaining=2)
+[browse] Tab closed (id=13, remaining=2)
+[browse] Tab closed (id=14, remaining=2)
+[browse] Tab closed (id=10, remaining=2)
+[browse] Idle for 1800s, shutting down
+[browse] Shutting down...
+[browse] Tab closed (id=15, remaining=1)
+[browse] Tab closed (id=9, remaining=0)

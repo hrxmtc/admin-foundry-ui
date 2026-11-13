@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"[data-nav=tickets]\").click();document.querySelector(\"[data-go=tickets][data-id=TK6003]\").click();document.querySelector(\"[data-action=detail-tab][data-value=materials]\").click();document.querySelector(\"[data-action=view-material]\").click();return {title:document.querySelector(\"#dialog-title\").textContent,scope:document.querySelector(\"#dialog .confirm-summary\").innerText,fragment:document.querySelector(\"#dialog .post-prose\")?.innerText}})())'",
+  "stdin": null,
+  "stdout": "{\"title\":\"指定授权片段 · 演示材料\",\"scope\":\"版本\\n第 6 章 · 快照 v3\\n范围\\n第 2 段 · 指定快照片段\\n用途\\n排查设定整理步骤失败\\n有效至\\n2026-11-14 14:10 UTC+8\",\"fragment\":\"【授权演示片段】林舟在雨停后走进旧书铺。他认出了柜台上的铜铃，却记不起上一次听到铃声是在什么时候。店主没有抬头，只把一封尚未拆开的信推了过来。\"}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:05:51.337Z\",\"remainingMs\":622773,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:05:51.372Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press Enter",
+  "observed": "Pressed Enter\n",
+  "hypothesis": "Enter已激活页签，读取焦点与受众状态验证键盘连续性。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify({focusTag:document.activeElement.tagName,focusAction:document.activeElement.dataset.action,focusValue:document.activeElement.dataset.value,selected:document.querySelector(\"[data-action=detail-tab][aria-selected=true]\")?.dataset.value,mode:document.querySelector(\"[data-action=reply-mode][aria-selected=true]\")?.dataset.value})'"
+}

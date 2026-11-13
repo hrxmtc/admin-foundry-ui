@@ -1,0 +1,24 @@
+{
+  "observationCommand": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "js",
+    "JSON.stringify((()=>{MOYU.closeModal();MOYU.commands[\"query-usage\"]({id:\"AI3002\"});MOYU.commands[\"query-refund\"]({id:\"RF4001\"});return {usageBefore:MOYU.find(\"actions\",\"AI3002\"),refundBefore:MOYU.find(\"refunds\",\"RF4001\")};})())"
+  ],
+  "observed": "{\"usageBefore\":{\"id\":\"AI3002\",\"user\":\"U1003\",\"project\":\"P2003\",\"title\":\"第 6 章 · 生成与设定整理\",\"source\":\"官方 AI\",\"model\":\"文本服务 A · 演示\",\"state\":\"部分完成\",\"settlement\":\"待核对\",\"auth\":2,\"charge\":0.64,\"expected\":0.64,\"cost\":null,\"hold\":1.2,\"account\":\"AC005\",\"date\":\"2026-11-13 13:40\",\"result\":true,\"parts\":[[\"生成草稿\",\"成功\",0.64],[\"设定整理\",\"用量未知\",null]]},\"refundBefore\":{\"id\":\"RF4001\",\"user\":\"U1004\",\"order\":\"MO261113004\",\"payment\":\"PAY004-B\",\"amount\":200,\"reason\":\"同一订单的额外成功付款，全额原路退回\",\"status\":\"结果待核对\",\"cash\":\"结果未知\",\"rights\":\"无需冲正\",\"reserve\":0,\"source\":null,\"rule\":\"多收款逐笔原路全退 · 演示\",\"date\":\"2026-11-13 12:10\",\"submitted\":true,\"channelUnknown\":true}}\n",
+  "hypothesis": "继续检查当前流程的下一步或复现同一异常，保留原始观察与命令。",
+  "nextCommand": [
+    "bun",
+    "/Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline",
+    "run",
+    "/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T172329Z/deadline.json",
+    "--",
+    "/Users/vector/.agents/skills/gstack/browse/dist/browse",
+    "js",
+    "JSON.stringify((()=>{const out={usageAfter:MOYU.find(\"actions\",\"AI3002\"),refundAfter:MOYU.find(\"refunds\",\"RF4001\")};MOYU.navigate(\"tickets\",\"TK6005\");MOYU.commands[\"author-preview\"]({kind:\"tickets\",id:\"TK6005\"});document.querySelector(\"#author-feedback\").value=\"还未解决，请继续核对原记录\";document.querySelector(\"[data-action=author-ticket-feedback]\").click();out.ticketAfter=MOYU.find(\"tickets\",\"TK6005\");return out;})())"
+  ]
+}

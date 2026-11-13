@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\".profile-button\").click();document.querySelector(\"[data-action=switch-role]\").click();return [...document.querySelectorAll(\"#dialog .login-role\")].map(x=>({id:x.dataset.id,text:x.innerText}))})())'",
+  "stdin": null,
+  "stdout": "[{\"id\":\"ST01\",\"text\":\"予安\\n周予安\\n负责人\"},{\"id\":\"ST02\",\"text\":\"陈亦\\n陈亦\\n客服 / 运营\"},{\"id\":\"ST03\",\"text\":\"顾霖\\n顾霖\\n财务\"},{\"id\":\"ST04\",\"text\":\"林澈\\n林澈\\n内容管理\"}]\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:06:23.455Z\",\"remainingMs\":590655,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:06:23.486Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}

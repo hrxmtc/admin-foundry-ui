@@ -1,0 +1,6 @@
+{
+  "observationCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse press Enter",
+  "observed": "Pressed Enter\n",
+  "hypothesis": "Enter激活后应保持内部页签焦点，核对后再检查方向键相邻路径。",
+  "nextCommand": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify({focused:document.activeElement.dataset.value,action:document.activeElement.dataset.action,selected:document.querySelector(\"[data-action=detail-tab][aria-selected=true]\").dataset.value,tabs:[...document.querySelectorAll(\".detail-tabs [role=tab]\")].map(b=>({value:b.dataset.value,tabIndex:b.tabIndex}))})'"
+}

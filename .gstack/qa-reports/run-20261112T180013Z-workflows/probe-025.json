@@ -1,0 +1,7 @@
+{
+  "command": "bun /Users/vector/.agents/skills/gstack/bin/gstack-qa-deadline run '/Users/vector/Library/Application Support/Open Design/namespaces/release-stable/data/projects/moyu-admin/.gstack/qa-reports/run-20261112T180013Z-workflows/deadline.json' -- /Users/vector/.agents/skills/gstack/browse/dist/browse js 'JSON.stringify((()=>{document.querySelector(\"#dialog [data-action=modal-confirm]\").click();return {status:document.querySelector(\".ticket-context\").innerText,dialogOpen:document.querySelector(\"#dialog\").open,publicNotLeaked:!document.querySelector(\".ticket-thread\").innerText.includes(\"请财务核对原消费与重复子调用证据\")}})())'",
+  "stdin": null,
+  "stdout": "{\"status\":\"TK6002\\n处理中\\n作者 林晚\\n负责人 顾霖\\n分派 / 交接\\n更新状态\",\"dialogOpen\":false,\"publicNotLeaked\":true}\n",
+  "stderr": "\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"started\",\"version\":1,\"startedAt\":\"2026-11-12T18:01:14.110Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"budgetMs\":900000,\"observedAt\":\"2026-11-12T18:05:00.282Z\",\"remainingMs\":673828,\"expired\":false}\n\nQA_DEADLINE {\"guard\":\"qa-deadline\",\"event\":\"finished\",\"observedAt\":\"2026-11-12T18:05:00.317Z\",\"deadlineAt\":\"2026-11-12T18:16:14.110Z\",\"timedOut\":false,\"exitCode\":0}\n",
+  "exit": 0
+}
